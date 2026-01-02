@@ -4,15 +4,14 @@ import { Link } from "react-router-dom";
 
 export function Nav() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur border-b">
+    <header className="fixed top-0 left-0 w-full z-50 bg-blue-300 backdrop-blur border-b">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         
         {/* Logo */}
         <Link
           to="/"
-          className="text-xl font-bold tracking-tight text-gray-900"
-        >
-          Ramon<span className="text-blue-500">.</span>
+          className="text-gray-900"
+        ><span className=" text-xl font-bold font-sans tracking-tight text-blue-700">Ramon.</span>
         </Link>
 
         {/* Desktop menu */}
@@ -25,7 +24,7 @@ export function Nav() {
 
         {/* Mobile menu */}
         <Dialog.Root>
-          <Dialog.Trigger className="md:hidden p-2 rounded hover:bg-gray-100 transition">
+          <Dialog.Trigger className="md:hidden p-2 rounded hover:bg-gray-600 transition">
             <HamburgerMenuIcon width={24} height={24} />
           </Dialog.Trigger>
 
