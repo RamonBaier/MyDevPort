@@ -1,13 +1,13 @@
-
-import './css/App.css'
+import { Routes, Route } from "react-router-dom";
+import { DefaultLayout } from "./layouts/DefaultLayout";
+import HomePage from "./pages/HomePage";
 
 export default function App() {
   return (
-    <div>
-      Meu Portifolio
-    </div>
+    <Routes>
+      <Route element={<DefaultLayout />}>
+        <Route path="/" element={<HomePage />} />
+      </Route>
+    </Routes>
   );
 }
-
-
-
