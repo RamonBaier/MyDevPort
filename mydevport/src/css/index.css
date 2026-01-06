@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@layer components {
+  .nav-link {
+    @apply text-sm font-semibold leading-7 transition-colors;
+  }
+
+  .nav-link-default {
+    @apply text-gray-100 hover:text-indigo-300;
+  }
+
+  .nav-link-active {
+    @apply text-indigo-400;
+  }
+}

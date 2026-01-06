@@ -1,14 +1,15 @@
-export default function HomePage() {
+export function HomePage() {
   return (
-    <main className="relative isolate min-h-screen bg-gray-900 px-6 pt-14 lg:px-8">
+    <section className="relative isolate bg-gray-900 px-6 pt-14 lg:px-8">
       {/* Blur roxo */}
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
       >
         <div
-          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg]
-          bg-gradient-to-tr from-purple-500 to-indigo-500 opacity-30
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] 
+          -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr 
+          from-purple-500 to-indigo-500 opacity-30
           sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           style={{
             clipPath:
@@ -18,30 +19,33 @@ export default function HomePage() {
       </div>
 
       {/* Conteúdo */}
-      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Bem vindo ao meu Portfólio Dev!
-          </h1>
+      <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          Olá, eu sou Ramon.
+        </h1>
 
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Aqui vou contar um pouco sobre mim e mostrar um resumo de tudo que trabalhei e soluções que desenvolvi, desde pequenas automações até aplicativos mobile.
-          </p>
+        <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+          Seja bem-vindo ao meu Portfólio Dev!
+        </h2>
 
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400"
-            >
-              Vamos começar!
-            </a>
+        <p className="mt-6 text-lg leading-8 text-gray-300">
+          Aqui vou contar um pouco sobre mim e mostrar um resumo de tudo que trabalhei
+          e soluções que desenvolvi.
+        </p>
 
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
-              Grid de projetos <span aria-hidden="true">→</span>
-            </a>
-          </div>
+        <div className="mt-10 flex items-center justify-center gap-x-6">
+          <a
+            href="/TourPage"
+            className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400"
+          >
+            Vamos começar!
+          </a>
+
+          <a href="/projects" className="text-sm font-semibold leading-6 text-white">
+            Grid de projetos →
+          </a>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
